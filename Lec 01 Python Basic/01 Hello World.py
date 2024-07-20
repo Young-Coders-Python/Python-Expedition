@@ -1,5 +1,5 @@
 # Python Comment
-# This is an example of single line comment
+# This is an example of single line comment, interpreter ignore Python comment
 # Shortcut to create: control/command + /
 # Another type is multi line comments, how to do that?
 
