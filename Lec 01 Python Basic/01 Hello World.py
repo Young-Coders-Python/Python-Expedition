@@ -1,6 +1,6 @@
 # Python Comment
 # This is an example of single line comment
-# Shortcut: control/command + /
+# Shortcut to create: control/command + /
 # Another type is multi line comments, how to do that?
 
 """
@@ -11,7 +11,7 @@ Date: 07/19/2024
 """
 
 '''
-Here we used, 3 single quotation
+Here we used, 3 single quotation, but we will use double quotation instead of single quotation al through course
 '''
 
 # print() is called a function
