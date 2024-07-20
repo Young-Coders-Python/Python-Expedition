@@ -110,6 +110,13 @@ print(type(y))
 z = bool("Tofael")
 print(type(z))
 
+# although the data type is different but casting allows us to get a new data type
+# windows user: shift + alt + down/up arrow to copy a line
+# Mac user: shift + opt + down/up arrow to copy a line
+# windows user: shift + control + k to delete a line
+# Mac user: shift + command + k to delete a line
+
+
 
 
 
