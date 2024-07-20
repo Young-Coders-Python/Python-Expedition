@@ -14,6 +14,7 @@ Date: 07/19/2024
 Here we used, 3 single quotation, but we will use double quotation instead of single quotation al through course
 '''
 
+print("--------------------------------------------------")
 # print() is called a function
 # more specifically library function, because it came from python library
 print("Hello World!")
