@@ -17,7 +17,7 @@ salary = 125000
 
 # by formatting text, we can get a outcome of String and other data type
 # this {} is called placeholder
-outcome = f"My Name is {fname} {lname}, my age {age} and my salary {salary:,.2f}"
+outcome = f"My Name is {fname.upper()} {lname.upper()}, my age {age} and my salary {salary:,.2f}"
 print(outcome)
 
 cost1 = 4
