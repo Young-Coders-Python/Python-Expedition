@@ -6,7 +6,7 @@ print(fname + lname)
 # print(fname + age) # can only concatenate str to str, (not str to "int") 
 print(fname, age) # this is Ok
 
-# cannot concatenate str to "int"
+# cannot concatenate str to "int", see below line
 # print("My name: " + fname + " " + lname + ", Age" + age)
 
 # Python Format String
@@ -17,7 +17,7 @@ salary = 125000
 
 # by formatting text, we can get a outcome of String and other data type
 # this {} is called placeholder
-outcome = f"My Name is {fname} {lname}, my age {age} and my salary {salary}"
+outcome = f"My Name is {fname} {lname}, my age {age} and my salary {salary:,.2f}"
 print(outcome)
 
 cost1 = 4
