@@ -7,13 +7,16 @@ print("Hello")
 print(len("Hello"))
 print(type("Hello"))
 
-# User define function
-
+print("--------------------------------------")
+# User defined function
+# simple One
 def myFunction():
     print("This is my first created Function")
 
 myFunction()
 
+print("--------------------------------------")
+# By using variables
 empName = "Alex Wu"
 empId = 352
 empSalary = 5568346.563
@@ -27,7 +30,8 @@ def empInfo():
 
 empInfo()
 
-# Another way
+print("--------------------------------------")
+# By using formatted Text
 def emp_info():
     x = f"Employee Name: {empName.upper()} \nEmployee Id: {empId} \nEmployee Salary: {empSalary:,.4f} \nFull Time Employee: {fullTimeEmployee}"
     print(x)
