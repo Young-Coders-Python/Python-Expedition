@@ -45,6 +45,8 @@ print(x.isalnum()) # Why False? space between words
 fruit = "Apple483"
 print(fruit.isalnum())
 
+# Next time, rest of the methods below will be teach later sometime, not at the beginning
+
 print("--------------------------------------")
 # The isalpha() method returns True if all the characters are alphabet letters (a-z). 
 fruit = "483Apple"

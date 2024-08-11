@@ -10,3 +10,6 @@ Step7: Print all the variables and their types as a outcome
 Step8: Copy all the code and paste it to the HW in your dashboard
 
 """
+myName = "Alex"
+print(myName)
+print(type(myName))
