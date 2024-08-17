@@ -35,7 +35,7 @@ print("--------------------------------------")
 m = 6
 n = 4
 
-# Equal to
+# Equal
 print(m==n)
 
 # Not Equal
