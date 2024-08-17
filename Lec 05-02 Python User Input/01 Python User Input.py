@@ -9,8 +9,8 @@ def num_function():
 
 num_function()
 
-# inpiut function only provide String type input
-# we are not getting an addition
+# input() always returns a string.
+# so, we are not getting an addition
 num3 = input("Number 3: ")
 num4 = input("Number 4: ")
 
@@ -19,7 +19,7 @@ def addition():
 
 addition()
 
-# input() always returns a string. If we want a numeric type, then you need to convert the string to the appropriate type with the built-in int(), float(), or complex() function
+# If we want a numeric type, then you need to convert the string to the appropriate type with the built-in int(), float(), or complex() function
 # We have to use Type casting like below
 num5 = int(input("Number 5: "))
 num6 = int(input("Number 6: "))
@@ -41,5 +41,8 @@ def empInfo(empName, empId, empSalary, fullTimeEmployee):
 
 # We define the variables when the function is called
 empInfo(empName, empId, empSalary, fullTimeEmployee)
+# empInfo(empName, empId, empSalary, fullTimeEmployee)
+# User input can only accept one sets of data
+
 
 
