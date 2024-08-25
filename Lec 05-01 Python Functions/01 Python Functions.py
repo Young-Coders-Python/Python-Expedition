@@ -15,7 +15,8 @@ def myFunction():
 
 myFunction()
 
-print("--------------------------------------")
+
+
 # By using variables
 empName = "Alex Wu"
 empId = 352

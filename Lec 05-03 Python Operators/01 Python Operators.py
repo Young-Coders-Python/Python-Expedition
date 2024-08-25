@@ -1,5 +1,6 @@
 # Operators are used to perform operations on variables and values.
 # In the example below, we use the + operator to add together two values:
+print(5+7)
 
 # Python Arithmetic operators [line 6-31]
 
@@ -22,7 +23,7 @@ print(x/y)
 # Floor division [new]
 print(x//y)
 
-# Modulus
+# Modulus or remainder
 print(x%y)
 
 # Exponentiation
@@ -30,13 +31,17 @@ a = 2
 b = 5
 print(a**b)
 
+'''
+The = operator is used for assignment, such as when assigning a value to a variable. The == operator is the relational operator for checking equality of two values. If the values are the same, it will return True , and will return False otherwise.
+'''
+
 print("--------------------------------------")
 # Python Comparison Operators
-m = 6
+m = 6 # here you assign a value for m
 n = 4
 
 # Equal
-print(m==n)
+print(m==n) # here you compare the value
 
 # Not Equal
 print(m!=n)

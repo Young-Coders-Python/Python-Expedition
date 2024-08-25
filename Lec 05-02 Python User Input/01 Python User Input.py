@@ -44,5 +44,3 @@ empInfo(empName, empId, empSalary, fullTimeEmployee)
 # empInfo(empName, empId, empSalary, fullTimeEmployee)
 # User input can only accept one sets of data
 
-
-
