@@ -12,6 +12,7 @@ def outcome(val1, val2):
             print(val1, "is an even number and", val1, "is greater than or equal to", val2)
         elif val1<=val2:
             print(val1, "is an even number and", val1, "is less than or equal to", val2)
+    # we used logical not in below line, instead of val1%2==1
     elif not val1%2==0:
         if val1>val2:
             print(val1, "is an odd number and", val1, "is greater than", val2)
