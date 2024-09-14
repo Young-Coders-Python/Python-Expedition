@@ -18,13 +18,18 @@ elif a==b:
 else:
     print("The system failed to execute the order")
 
-# TODO: Research the below one
+
 # The bool() function allows you to evaluate any value, and give you True or False in return
 # Returns True when the argument x is true, False otherwise.
+
+# Almost any value is evaluated to True if it has some sort of content. Any string is True, except empty strings. Any number is True, except 0. Any list, tuple, set, and dictionary are True, except empty ones.
+
+# In fact, there are not many values that evaluate to False, except empty values, such as (), [], {}, "", the number 0, and the value None. And of course the value False evaluates to False
 print(bool("Hello")) # True
 print(bool("")) # False
-print(bool("Hello"))
+
 print(bool(15))
 print(bool(0))
+
 print(bool(1.5))
 print(bool(0.0))
