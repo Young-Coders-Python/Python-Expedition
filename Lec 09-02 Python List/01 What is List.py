@@ -1,4 +1,4 @@
-# one String
+# a single String
 language = "Python"
 print(language)
 print(type(language))
