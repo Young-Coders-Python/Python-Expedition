@@ -3,32 +3,47 @@ language = "Python"
 print(language)
 print(type(language))
 
+print("---------------------------------")
 # Python use 4 built-in data types to store collections of data: List, Tuple, Set, and Dictionary
 # Lists are used to store multiple items in a single variable.
 # a list of String, created using square brackets
 # The name of this list is programmingLanguage
-programmingLanguage = ["Python", "Java", "C++", "C#", "Javacsript", "SQL", "C++"]
+programmingLanguage = ["Python", "Java", "C++", "C#", "Javacsript", "SQL", "C++", "Java"]
 print(programmingLanguage)
 print(type(programmingLanguage))
 # lists are defined as objects with the data type 'list'
 
+print("---------------------------------")
 # List items are ordered, changeable [add, remove], and allow duplicate values.
 # List items are indexed and accessed by referring to the index number. the first item has index [0], the second item has index [1] etc.
 print(programmingLanguage[0])
 print(programmingLanguage[3])
 
+print("---------------------------------")
 # Negative indexing means start from the end. -1 refers to the last index, -2 refers to the second last index and so on.
 print(programmingLanguage[-1])
 print(programmingLanguage[-2])
 
+print("---------------------------------")
+# Returns the index of the first element with the specified value
+print(programmingLanguage.index("Java"))
+print(programmingLanguage.index("C#"))
+
+print("---------------------------------")
+# Returns the number of elements with the specified value
+print(programmingLanguage.count("Java"))
+print(programmingLanguage.count("Python"))
+
+
+print("---------------------------------")
 # Below line print from index 0 to last index
 print(programmingLanguage)
 
 # Range of Indexes
 # You can specify a range of indexes by specifying where to start and where to end the range.
 # When specifying a range, the return value will be a new list with the specified items.
-# Start value 1
-# By leaving out the End value, the range will go on to the end of the list
+# Below, Start value 1
+# By excluded the End value, the range will go on to the end of the list
 print(programmingLanguage[1:])
 
 # Start value 2 [included], End value excluded [5-1= till 4]
@@ -43,7 +58,9 @@ print(programmingLanguage[1:5:2])
 # returns the items from "C#" (-4) to, but NOT including "C++" (-1):
 print(programmingLanguage[-4:-1])
 
+print("---------------------------------")
 # "in" keyword give us boolean value
+programmingLanguage = ["Python", "Java", "C++", "C#", "Javacsript", "SQL", "C++", "Java"]
 print("Java" in programmingLanguage)
 print("java" in programmingLanguage) # Case sensitive
 
@@ -57,15 +74,18 @@ if "Java" in programmingLanguage:
 else:
     print("Java is not present in the List")
 
+print("---------------------------------")
 programmingLanguage = ["Python", "Java", "C++", "C#", "Javacsript", "SQL", "C++"]
 print(programmingLanguage)
 print(len(programmingLanguage))
 
+print("---------------------------------")
 # To change the value of a specific index, we ahve to refer the index number
 programmingLanguage[1] = "Dart"
 print(programmingLanguage)
 print(len(programmingLanguage))
 
+print("---------------------------------")
 # If you insert more items than you replace, the new items will be inserted where you specified, and the remaining items will move accordingly
 # The length of the list will change when the number of items inserted does not match the number of items replaced.
 programmingLanguage[2:3] = ["Scala", "Typescript"]
@@ -81,22 +101,26 @@ programmingLanguage[2:7] = ["Kotlin"]
 print(programmingLanguage)
 print(len(programmingLanguage))
 
+print("---------------------------------")
 # Add List Items by append(), insert(), extend()
 
 # The append() method is used to add an item to the end of the list
 programmingLanguage.append("Groovy")
 print(programmingLanguage)
 
+print("---------------------------------")
 # The insert() method inserts a value at the specified index without replacing any of the existing values
 programmingLanguage.insert(1, "Julia")
 print(programmingLanguage)
 print(len(programmingLanguage))
 
+print("---------------------------------")
 # The extend() method append elements from another list to the current list end
 p1 = ["C+", "Ruby"]
 programmingLanguage.extend(p1)
 print(programmingLanguage)
 
+print("---------------------------------")
 # Remove List Items
 
 # The remove() method removes [the first occurrence] the specified value from the list
@@ -107,15 +131,20 @@ print(programmingLanguage)
 programmingLanguage.remove("Napa")
 print(programmingLanguage)
 '''
+
 # Raises ValueError if the value is not present. Used Python comments as "Napa" absent" in the list
 
+print("---------------------------------")
 # The pop() method can removes the specified index if mentioned.
 programmingLanguage.pop(4)
+print(programmingLanguage)
 
 # If the index is not speciifed , the pop() method removes the last item.
 programmingLanguage.pop()
 programmingLanguage.pop()
 print(programmingLanguage)
+
+print("---------------------------------")
 
 # The del keyword can removes the specified index if mentioned
 del programmingLanguage [2]
@@ -126,12 +155,14 @@ del programmingLanguage
 # print(programmingLanguage)
 # this will cause an error because "programmingLanguage" have succsesfully deleted
 
+print("---------------------------------")
 # The clear() method empties the list. The list still remains, but it has no content.
 pl = ["Python", "Java", "C++", "C#", "Javacsript", "SQL", "C++"]
 print(pl)
 pl.clear()
 print(pl)
 
+print("---------------------------------")
 # List objects have a sort() method that will sort the list alphanumerically, ascending, by default
 programmingLanguage = ["Python", "Java", "C++", "C#", "Javacsript", "SQL", "Java"]
 programmingLanguage.sort()
@@ -142,9 +173,12 @@ programmingLanguage = ["python", "Java", "C++", "C#", "javacsript", "SQL", "java
 programmingLanguage.sort()
 print(programmingLanguage)
 
+print("---------------------------------")
 # to get a case-insensitive sort function, use str.lower as a key function when sorting a list.
 programmingLanguage.sort(key=str.lower)
 print(programmingLanguage)
+
+print("---------------------------------")
 
 # The reverse() method reverses the current sorting order of the elements.
 programmingLanguage = ["python", "Java", "C++", "C#", "javacsript", "SQL", "java"]
@@ -164,38 +198,37 @@ print(numbers)
 numbers.sort(reverse = False)
 print(numbers)
 
+print("---------------------------------")
 # The built-in List method copy() is used to copy a list.
 programmingLanguage = ["Python", "Java", "C++", "C#", "Javacsript", "SQL", "Java"]
 pl = programmingLanguage.copy()
 print(pl) # pl is the new list copied from programmingLanguage list
 
+print("---------------------------------")
 # The built-in List method list() is used to copy a list too
 programmingLanguage = ["Java", "C++", "C#", "Javacsript", "SQL", "Java"]
-pla = list(programmingLanguage)
-print(pla) 
+prla = list(programmingLanguage)
+print(prla) 
 
+print("---------------------------------")
 # The : (slice) operator is used to copy a list too
 programmingLanguage = ["SQL", "Java", "C++", "C#", "Javacsript", "Java"]
 plan = programmingLanguage[:]
 print(plan) 
 
+print("---------------------------------")
 # Join Two Lists by using the + operator
 pl1 = ["Python", "Java", "C++", "C#", "Javacsript", "SQL"]
 pl2 = ["Ruby", "Pearl", "Julia", "PHP"]
 programmingLanguage = pl1 + pl2
 print(programmingLanguage)
 
+print("---------------------------------")
 # The extend() method append elements from another list to the current list end
 pl2.extend(pl1)
 print(pl2)
 
-# Returns the index of the first element with the specified value
-print(programmingLanguage.index("Java"))
-print(programmingLanguage.index("C#"))
-
-# Returns the number of elements with the specified value
-print(programmingLanguage.count("Java"))
-print(programmingLanguage.count("Python"))
-
+print("---------------------------------")
+print("---------------------------------")
 
 
