@@ -3,7 +3,6 @@
 number = list(range(10))
 print(number)
 
-
 number = list(range(2, 10))
 print(number)
 

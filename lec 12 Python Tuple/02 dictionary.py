@@ -9,3 +9,17 @@ programmingLanguage = ["Python", "Java", "C++", "C#", "Javacsript", "SQL", "Java
 # Tuples are written with parenthesis (round brackets).
 Fruits = ("Apple", "Orange", "Grapes", "Kiwi", "Cherry")
 
+# key value pair
+info = {
+    "name": "Alex",
+    "gender": "Male",
+    "city": "New York",
+    "age": 33,
+    "grade": 3.3453,
+    "fullTimeStudent": True
+}
+
+print(info)
+print(type(info))
+
+
