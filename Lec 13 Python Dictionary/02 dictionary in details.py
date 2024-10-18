@@ -195,10 +195,57 @@ print("-----------------------")
 for x in car.values():
     print(x)
 
+print("-----------------------")
+# Loop through both keys and values, by using the items() method
 for x, y in car.items():
     print(x, y)
 
 # A dictionary can contain dictionaries, this is called nested dictionaries
+students = {
+    "st1":{
+        "name": "Alex",
+        "id": 663
+    },
+    "st2":{
+        "name": "Jenifer",
+        "id": 546
+    },
+    "st3":{
+        "name": "Moses",
+        "id":879
+    }
+}
+print(students)
 
 # Create three dictionaries, then create one dictionary that will contain the other three dictionaries
-# 3 methods
+emp1 = {
+        "name": "Alex",
+        "id": 663
+    }
+emp2 = {
+        "name": "Jenifer",
+        "id": 546
+    }
+emp3 = {
+        "name": "Moses",
+        "id":879
+    }
+
+employees = {
+    "emp1": emp1,
+    "emp2": emp2,
+    "emp3": emp3
+}
+
+print(employees)
+
+# How to Access Items in Nested Dictionaries
+print(employees["emp2"]["name"])
+print(students["st1"]["id"])
+
+# Loop Through Nested Dictionaries
+for x, obj in students.items():
+    print(x)
+
+    for y in obj:
+        print(y + ':', obj[y])

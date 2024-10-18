@@ -101,11 +101,12 @@ while i < len(fruits):
     print(fruits[i])
     i+=1
 
+# Return the number of times the value 3 appears in the tuple
 thisTuple = (1, 3, 3, 1, 6, 3, 8, 3, 9, 0, 4, 3)
 x = thisTuple.count(3)
 print(x)
 
-# The index() method finds the first occurrence of the specified value.
+# The index() method finds the first occurrence of the specified value 3
 y = thisTuple.index(3)
 print(y)
 
