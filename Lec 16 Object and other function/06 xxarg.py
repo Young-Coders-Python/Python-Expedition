@@ -9,5 +9,13 @@ student(102, "Brian")
 
 def stu (**detail):
     print(detail)
+    # we can also ask for a specific value by calling the key like below
+    print(detail["grade"])
 
 stu(name ="Alex", id = 101, grade = 3.768, fullTimeStudent = True)
+
+# Another example
+def my_function(**kid):
+    print("His last name is " + kid["lname"])
+
+my_function(fname = "Tobias", lname = "Refsnes")

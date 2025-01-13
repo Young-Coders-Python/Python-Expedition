@@ -1,19 +1,21 @@
 class student:
-    # these variables are under a class or member of the class
-    name = ""
+    # these variables are under/inside a class or member of the class
     id = ""
+    name = ""
 
 # what is an object? how we create object?
 # here a is an object of the student class, it represented like below
 a = student()
+
 # the best way to know, a is an object of student class or not, we use below boolean method
 print(isinstance(a, student))
 
 # what an object can do?
 # we can create object, who can access the members of a class
+a.id = 203
 a.name = "Alex"
-a.id = 101
-print(a.name, a.id)
+print(a.id , a.name)
+
 # by using formatted text
 print(f"Name: {a.name}, Id: {a.id}")
 

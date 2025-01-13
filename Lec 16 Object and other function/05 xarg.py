@@ -10,7 +10,12 @@ student(102, "Brian")
 def stu (*detail):
     print(detail)
 
-print(type(stu))
 stu("Alex")
 stu("Alex", 101)
 stu("Alex", 101, 3.768, True)
+
+# Another example
+def my_function(*kids):
+    print("The youngest child is " + kids[2])
+
+my_function("Emil", "Tobias", "Linus")

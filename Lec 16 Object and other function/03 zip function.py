@@ -8,5 +8,5 @@ print(object)
 # you can also print it directly, will provide same result
 print(list(zip(id, name)))
 
-# also you can add other variable inisde the zip function
+# also you can add other variable inisde the zip function directly which will be distributed aong tuples
 print(list(zip(id, name, "AABA")))

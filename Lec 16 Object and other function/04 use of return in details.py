@@ -13,7 +13,7 @@ largest(20, 30)
 # use print function
 print(largest(20, 30))
 
-# also we can define the function with avariable
+# also we can define the function with a variable
 m = largest(10, 10)
 print(m)
 
@@ -29,5 +29,7 @@ print(y)
 # what is the advantage of return function. Ans: we can do additional action on a function
 
 z = sum (7, 8)
-z = z+1
+z = z+1 # this kind of addditional action are done when you use return type
 print(z)
+
+
